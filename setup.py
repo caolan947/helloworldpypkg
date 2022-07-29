@@ -5,7 +5,7 @@ DESCRIPTION = 'Hello world.'
 LONG_DESCRIPTION = 'A package that says Hello world! My first pypi package.'
 
 setup(
-    name="hellopkgcdaly",
+    name="helloworldcdaly",
     version=VERSION,
     author="caolan947 (Caolán Daly)",
     author_email="<caolan.day94@gmail.com>",
