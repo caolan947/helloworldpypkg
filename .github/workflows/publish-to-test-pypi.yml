@@ -28,7 +28,7 @@ jobs:
           cd libname
           python -m unittest discover -s ./test  -p 'test_*.py'
   
-  build-n-publish:
+  build-n-publish-test:
     name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
     runs-on: ubuntu-18.04
     steps:
