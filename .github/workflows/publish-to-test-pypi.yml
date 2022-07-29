@@ -1,8 +1,24 @@
 name: Publish Python 🐍 distributions 📦 to PyPI and TestPyPI
 
-on: push
+on:
+  push:
+    branches:
+      - 'main'
+      - '**'
+  delete:
+    branches:
+      - '**'
 
 jobs:
+  test:
+    name: Running unit tests
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          # trigger the tests here
+  
   build-n-publish:
     name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
     runs-on: ubuntu-18.04
