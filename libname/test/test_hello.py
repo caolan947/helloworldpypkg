@@ -1,9 +1,8 @@
 import unittest
-from unittest.mock import Mock, patch
 
 import hello
 
-class TestSqlService(unittest.TestCase):
+class TestHello(unittest.TestCase):
 
     def test_say_hello(self):
 
