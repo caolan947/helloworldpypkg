@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          # trigger the tests here
+          python -m unittest discover -s ./test  -p 'test_*.py'
   
   build-n-publish:
     name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
